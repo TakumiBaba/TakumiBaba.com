@@ -3,12 +3,36 @@ html
   head
     meta(charset='utf-8')
     link(rel='stylesheet', href='/style.css')
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
 
   body
-    h1 gruntcity
-    p welcome to gruntcity
+    .container
+      .header
+        ul.nav.nav-pills.pull-right
+          li.active: a(href="./ja") Japanese
+          li: a(href="./en") English
+        h2.text-muted TakumiBaba.com
+      .contents
+        .page-header
+          h4 自己紹介
+        p 馬場 匠見 (ばば たくみ)
+        p 慶応義塾大学 政策・メディア研究科 修士課程 インタラクションデザインプロジェクト
+        p 研究分野は Human-Computer Interaction
+        p 現在は人の行動をプログラムに組み込むためのプログラミング環境 BabaScript を提案している。
+
+        .page-header
+          h4 研究プロジェクト
+        h5: a(href="//babascript.org") BabaScript
+        p プログラム内に人への命令構文を組み込むことのできるプログラミングライブラリと
+        p その命令に対して返り値を返すことのできるクライアントライブラリを組み合わせることで
+        p プログラム内で人を関数として扱えるプログラミング環境です。
+
+        .page-header
+          h4 コンタクト
+        p Email: bb@sfc.keio.ac.jp
+        p Twitter:
+          a(href="https://twitter.com/takumibaba") @TakumiBaba 
     script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js')
     script(src='/script.js')
-

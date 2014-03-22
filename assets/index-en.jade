@@ -1,0 +1,41 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='/style.css')
+    link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+
+  body
+    .container
+      .header
+        ul.nav.nav-pills.pull-right
+          li: a(href="./ja") Japanese
+          li.active: a(href="./en") English
+        h2.text-muted TakumiBaba.com
+      .contents
+        .page-header
+          h4 About Me
+        p Takumi Baba
+        p 2nd-year master student at InteractionDesign Project, Graduate School of Media and Governance, Keio University.
+        p My research interest is Human-Computer Interaction.
+        p now, I propose programming environment for integrating human acivity with program.
+
+        .page-header
+          h4 Research Project
+        h5: a(href="//babascript.org") BabaScript
+        p BabaScript is Programming environment that integrates human activity with program.
+        p In BabaScript Programing environment, Human behave Function.
+        p We implements two programming libraries.
+        p First, ...
+        p second, ...
+
+        .page-header
+          h4 Contact
+        p Email: bb@sfc.keio.ac.jp
+        p Twitter:
+          a(href="https://twitter.com/takumibaba") @TakumiBaba 
+
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js')
+    script(src='/script.js')

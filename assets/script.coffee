@@ -1,13 +1,15 @@
 class Application extends Backbone.Router
 
   routes:
-    '': 'index'
+    "": "ja"
+    "ja": "ja"
+    "en": "en"
 
-  initialize: ->
-    Backbone.history.start pushState: on
+  ja: ->
+    console.log 'ja'
 
-  index: ->
-    $ =>
-      ($ 'p').text 'routing index'
+  en: ->
+    console.log "en"
 
 app = new Application()
+Backbone.history.start({pushState: true})
